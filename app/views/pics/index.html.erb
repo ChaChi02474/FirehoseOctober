@@ -1,18 +1,20 @@
 
 
 
-<!--<div class="my-wrapper"> -->
+<div class="my-wrapper text-center">
 
-<div class="span6 offset3 text-center stolen-surfbox">
+<!--<div class="span6 offset3 text-center stolen-surfbox">-->
 
 
 	<h1 class="custom-font-1">My Pics</h1>
 
 <% @pics.each do |pic| %>
-   <div class="box">
-   <h2 class="custom-font-1">
+   <div class="span3 stolen-surfbox text-center">
+   <h2 class=" spancustom-font-1">
    	Hour <%= pic.hour %>
    </h2>
+      <br style="clear:both">
+
 
    <h3 class="custom-font-1">
    	I feel <%= pic.emotion %>
