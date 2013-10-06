@@ -1,7 +1,29 @@
 
-<h1>My Pics</h1>
 
-<%= @pics.each do |pic| %>
-    <%= pic.inspect %>
+
+<!--<div class="my-wrapper"> -->
+
+<div class="span6 offset3 text-center stolen-surfbox">
+
+
+	<h1 class="custom-font-1">My Pics</h1>
+
+<% @pics.each do |pic| %>
+   <div class="box">
+   <h2 class="custom-font-1">
+   	Hour <%= pic.hour %>
+   </h2>
+
+   <h3 class="custom-font-1">
+   	I feel <%= pic.emotion %>
+   </h3>
+
+   <p class="custom-font-2">
+   	I learned that <%= pic.learned%>
+   </p>
+
+</div>
+ 
 
 	<% end %>
+</div>
