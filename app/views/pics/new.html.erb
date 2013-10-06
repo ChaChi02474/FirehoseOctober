@@ -4,9 +4,13 @@
 
 	<div class="span6 offset3 stolen-surfbox text-center">
 
-
 <%= simple_form_for @pic do |f| %>
  <%= f.input :hour, label: 'which Hour is this for?' %>
+<br/>
+
+<%= f.input :image, :as => :file %>
+<br/>
+
  <%= f.input :emotion, label: 'How did you feel?', placeholder: 'I\'m super stoned!' %>
  <%= f.input :learned, :label => 'What did you learn?', :input_html => { :rows => 10}, placeholder: 'Ruby, Rails, CSS, JavaScript, CSS3, HTML5, Guthub' %>
  <%= submit_tag "Save My Picture", :class => 'btn btn-large btn-primary' %>
